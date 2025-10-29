@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    <form>
+        <!-- <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+        </div>
+      
+        <div>
+            <label for="textarea">Message</label>
+            <textarea id="textarea" rows="10" cols="30"></textarea>
+        </div>
+        <input type="submit" value="submit"> -->
+  <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required autocomplete="off" value="abc@example.com" size="30" readonly disabled pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+        </div>
+        <div>
+            <label for="password" >Password</label>
+            <input type="password" id="password"placeholder="Enter your password" required/>
+        </div>
+        <div>
+            <label for="number">number</label>
+            <input type="number" max="5" min="1" value="1" id="number"/>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" vaue="male" name="gender" />male
+            <input type="radio" value="female"name="gender" />female
+        </div>
+           <div>
+            <label for="gender">Fav Hobbies:</label>
+            <input type="checkbox" vaue="music"/>Music
+            <input type="checkbox" value="sports" />Sports
+        </div>
+        <div>
+            <label for="country">Fav Country</label>
+            <select name="country" id="country">
+                <option value="USA">USA</option>
+                <option value="USA">India</option>
+                <option value="USA">Canada</option>
+                <option value="USA">UK</option>
+            </select>
+        </div>
+          <div>
+            <label for="country">Fav Country</label>
+            <input type="text" id="country" name="country" list="countries" />
+            <datalist id="countries">
+                <option value="USA">USA</option>
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="file"> Select file</label>
+            <input type="file" name="fileUpload"/>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+</html>

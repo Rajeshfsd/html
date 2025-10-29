@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            padding:40px;
+            font-family:'roboto';
+            font-size:18px;
+        }
+        li{
+            margin-left:10px;
+            font-size: 20px;
+           /* vertical line to right */
+    }
+       img{
+        width:250px;
+        height:60px;
+       }
+      ul li a{
+        list-style-type:none;
+        text-decoration: none;
+         color:black;
+         
+       }
+       ul li a:hover{
+        cursor:pointer;
+        text-decoration: underline;
+       
+       }
+       button{
+        background-color: black;
+        color:white;
+        padding:8px;
+        font-size:14px;
+        border-radius:5px;
+        box-shadow:0 2px 2px black;
+       }
+       button:hover{
+        cursor:pointer;
+        background-color: white;
+        color:black;
+        
+       }
+       span{
+        margin-left:5px;    
+       }
+       hr{
+        color:black;
+        height:1px;
+        background-color: black;
+       }
+    </style>
+</head>
+<body >
+    <header >
+        <nav style="display:flex;justify-content: space-between;align-items: center;">
+            <div>
+            <img src="./Rajesh-removebg-preview.png" >
+            </div>
+            <div>
+                <ul style="list-style-type:none; display:flex;">
+                    <li><a href="">Home</a> <span>|</span></li>
+                    <li><a href="">About</a><span>|</span></li>
+                    <li><a href="">Section</a><span>|</span></li>
+                    <li><a href="">Contact</a><span>|</span></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section class="hero-section">
+            <h1> I am Rajesh </h1>
+            <p>
+                This website is all about Testing topics that i learnt in html
+            </p>
+            <button>See my Works</button>
+            <button style="margin-left:10px;">Visit Youtube</button>
+        </section>
+        <article>
+            <h2> Why Choose me?</h2>
+            <p> I am a full stack developer with extensive knowledge on frontend using React and backend using Springboot building microservices projects containing spring security, oauth, kafka for async communication and deployed in aws with the help of docker images.</p>
+        </article>
+        <aside>
+            <h3> Latest Work</h3>
+            <p> Right now i am expanding my knowledge on DSA and System Design to make highly scalable and performance optimized projects that doesn't break at any time.</p>
+        </aside>
+        <footer>
+            <p>&copy; 2025 Rajesh. All Rights Reserved</p>
+        </footer>
+    </main>
+    
+</body>
+</html>

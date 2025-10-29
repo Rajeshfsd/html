@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="Range">Range:</label>
+            <input type="range" name="range">
+        </div>
+        <div>
+            <label for="birthdate">birthdate:</label>
+            <input type="date" name="birthdate" />
+        </div>
+        <div>
+            <label for="appointmentTime">appointmentTime:</label>
+            <input type="time" name="appointmentTime" />
+        </div>
+        <div>
+            <label for="favouriteColor">favouriteColor</label>
+            <input type="color" name="favouriteColor" />
+        </div>
+        <div>
+            <label for ="website">website:</label>
+            <input type="url" name="website" placeholder="Enter website url" />
+        </div>
+        <div>
+            <label for="serchQuery">SerachQuery:</label>
+            <input type="search" name="searchQuery" placeholder="Search..." />
+        </div>
+        <div>
+            <label for ="expiryDate">Month & Year:</label>
+            <input type="month" name="expiryDate" />    
+        </div>
+        <div>
+            <label for="week">vacationWeek:</label>
+            <input type="week" name="vacationWeek" />
+        </div>
+    </form>
+    <form action=”/submit” method=”post”>
+<fieldset>
+	<legend>Contact Info</legend>
+     <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required autocomplete="off" value="abc@example.com" size="30" readonly disabled pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+        </div>
+        <div>
+            <label for="password" >Password</label>
+            <input type="password" id="password"placeholder="Enter your password" required/>
+        </div>
+</fieldset>
+</form>
+
+</body>
+</html>
